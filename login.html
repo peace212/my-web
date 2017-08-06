@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>The Chhotu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <!--BEGIN POPPYDOG.COM PASSWORD PROTECT -->
+ <!-- <script language="JavaScript" src="http://www.poppydog.com/ma/pd/pdutil.js"></script>
+ <script language="JavaScript">pd_isPP(46161,86555);</script>
+ <noscript><META HTTP-EQUIV="refresh" content="0;URL=http://www.poppydog.com/needjavascript.html" /></noscript> -->
+ <!--END POPPYDOG.COM PASSWORD PROTECT -->
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <div class="cont">
+  <div class="demo">
+    <div class="login">
+      <div class="login__check"></div>
+      <div class="login__form">
+         <form name="login">
+        <div class="login__row">
+          <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+          </svg>
+          <input type="text" class="login__input name" name="userid" placeholder="Username"/>
+        </div>
+        <div class="login__row">
+          <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+          </svg>
+          <input type="password" class="login__input pass" name="pswrd" placeholder="Password"/>
+        </div>
+        <button type="button" class="login-button" onclick="check(this.form)" value="Sign in" >Sign in</button>
+      </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+    <script language="javascript">
+           function check(form) { /*function to check userid & password*/
+               /*the following code checkes whether the entered userid and password are matching*/
+               if(form.userid.value == "chhotu" && form.pswrd.value == "motu") {
+                   window.open('somerandomloginpageforsecurity.html',"_self")/*opens the target page while Id & password matches*/
+               }
+               else {
+                   alert("Error Password or Username")/*displays error message*/
+               }
+           }
+       </script>
+
+       <script>
+       </script>
+</body>
+</html>
